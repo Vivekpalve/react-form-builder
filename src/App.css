@@ -1,0 +1,124 @@
+/* ===== Global Reset & Font ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+/* ===== Top Navigation Bar ===== */
+nav, .navbar {
+  background-color: #1976d2;
+  color: white;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a, .navbar a {
+  color: white !important;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav a:hover, .navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Page Title ===== */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+/* ===== Form Container ===== */
+.form-container, .card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: none !important;
+}
+
+/* ===== Input Fields ===== */
+input, select, textarea {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* ===== Buttons ===== */
+button, .btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #1e40af;
+}
+
+button.outline, .btn-outline {
+  background-color: transparent;
+  border: 1.5px solid #2563eb;
+  color: #2563eb;
+}
+
+button.outline:hover, .btn-outline:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* ===== Field List ===== */
+.fields-section {
+  margin-top: 1.5rem;
+}
+
+.field-item {
+  background-color: #f3f4f6;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav, .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a, .navbar a {
+    margin: 0.4rem 0 0 0;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+}
