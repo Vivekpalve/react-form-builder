@@ -216,7 +216,7 @@ export default function CreateForm() {
           localForm.fields.map((field, index) => (
             <div key={index}>
               {/* Render your field component */}
-              {/* {field.label} */}
+              {field.label}
             </div>
           ))
         )}
